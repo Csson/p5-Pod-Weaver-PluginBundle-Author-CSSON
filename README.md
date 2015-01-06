@@ -1,20 +1,10 @@
 # NAME
 
-Pod::Weaver::PluginBundle::Author::CSSON - Short intro
+Pod::Weaver::PluginBundle::Author::CSSON - Weave Pod like CSSON
 
 # VERSION
 
 Version 0.0001, released 2015-01-06.
-
-# SYNOPSIS
-
-    use Pod::Weaver::PluginBundle::Author::CSSON;
-
-# DESCRIPTION
-
-Pod::Weaver::PluginBundle::Author::CSSON is ...
-
-# SEE ALSO
 
 # HOMEPAGE
 
