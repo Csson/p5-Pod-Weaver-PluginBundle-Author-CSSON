@@ -27,20 +27,20 @@ sub mvp_bundle_config {
             $include_default_github = 1;
         }
         else {
-            warn ('[PW/@Iller] No github url found');
+            warn ('[PW/@Author::CSSON] No github url found');
         }
     }
 
     push @plugins => (
-        ['@Iller/CorePrep',       xp('@CorePrep'),       { } ],
-        ['@Iller/SingleEncoding', xp('-SingleEncoding'), { } ],
-        ['@Iller/Name',           xp('Name'),            { } ],
-        ['@Iller/Version',        xp('Version'),         { format => q{Version %v, released %{YYYY-MM-dd}d.} } ],
-        ['@Iller/Prelude',        xp('Region'),          { region_name => 'prelude' } ],
+        ['@Author::CSSON/CorePrep',       xp('@CorePrep'),       { } ],
+        ['@Author::CSSON/SingleEncoding', xp('-SingleEncoding'), { } ],
+        ['@Author::CSSON/Name',           xp('Name'),            { } ],
+        ['@Author::CSSON/Version',        xp('Version'),         { format => q{Version %v, released %{YYYY-MM-dd}d.} } ],
+        ['@Author::CSSON/Prelude',        xp('Region'),          { region_name => 'prelude' } ],
     );
 
     foreach my $plugin (qw/Synopsis Description Overview Stability/) {
-        push @plugins => ['@Iller/'.$plugin, xp('Generic'), { header => uc $plugin } ];
+        push @plugins => ['@Author::CSSON/'.$plugin, xp('Generic'), { header => uc $plugin } ];
     }
 
     foreach my $plugin ( ['Attributes', 'attr'],
@@ -50,19 +50,19 @@ sub mvp_bundle_config {
         push @plugins => [ $plugin->[0], xp('Collect'), { command => $plugin->[1], header => uc $plugin->[0] } ];
     }
     push @plugins => (
-        ['@Iller/Leftovers',             xp('Leftovers'), { } ],
-        ['@Iller/postlude',              xp('Region'),    { } ],
+        ['@Author::CSSON/Leftovers',             xp('Leftovers'), { } ],
+        ['@Author::CSSON/postlude',              xp('Region'),    { } ],
         (
             !$ENV{'ILLER_MINTING'} && $include_default_github ?
-            ['@Iller/Source::DefaultGitHub', xp('Source::DefaultGitHub'), { text => 'L<%s>' } ]
+            ['@Author::CSSON/Source::DefaultGitHub', xp('Source::DefaultGitHub'), { text => 'L<%s>' } ]
             :
             ()
         ),
-        ['@Iller/Homepage::DefaultCPAN', xp('Homepage::DefaultCPAN'), { text => 'L<%s>' } ],
-        ['@Iller/Authors',               xp('Authors'),   { } ],
-        ['@Iller/Legal',                 xp('Legal'),     { } ],
+        ['@Author::CSSON/Homepage::DefaultCPAN', xp('Homepage::DefaultCPAN'), { text => 'L<%s>' } ],
+        ['@Author::CSSON/Authors',               xp('Authors'),   { } ],
+        ['@Author::CSSON/Legal',                 xp('Legal'),     { } ],
 
-        ['@Iller/List', xp('-Transformer'), { transformer => 'List' } ],
+        ['@Author::CSSON/List', xp('-Transformer'), { transformer => 'List' } ],
     );
 
 
