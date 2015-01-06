@@ -4,7 +4,11 @@ Pod::Weaver::PluginBundle::Author::CSSON - Weave Pod like CSSON
 
 # VERSION
 
-Version 0.0001, released 2015-01-06.
+Version 0.0001, released 2015-01-07.
+
+# SOURCE
+
+[https://github.com/Csson/p5-Pod-Weaver-PluginBundle-Author-CSSON](https://github.com/Csson/p5-Pod-Weaver-PluginBundle-Author-CSSON)
 
 # HOMEPAGE
 

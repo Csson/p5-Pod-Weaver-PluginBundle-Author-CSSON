@@ -1,6 +1,7 @@
 requires 'perl', '5.010001';
 
-# requires 'Some::Module', 'VERSION';
+requires 'Path::Tiny';
+requires 'Pod::Weaver';
 
 on test => sub {
     requires 'Test::More', '0.96';

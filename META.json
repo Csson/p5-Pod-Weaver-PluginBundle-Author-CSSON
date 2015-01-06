@@ -4,7 +4,7 @@
       "Erik Carlsson <info@code301.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.029, Dist::Iller version 0.1002, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.029, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
@@ -40,6 +40,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Path::Tiny" : "0",
+            "Pod::Weaver" : "0",
             "perl" : "5.010001"
          }
       },
@@ -51,7 +53,17 @@
       }
    },
    "release_status" : "stable",
-   "resources" : {},
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/Csson/p5-Pod-Weaver-PluginBundle-Author-CSSON/issues"
+      },
+      "homepage" : "https://metacpan.org/release/Pod-Weaver-PluginBundle-Author-CSSON",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/Csson/p5-Pod-Weaver-PluginBundle-Author-CSSON.git",
+         "web" : "https://github.com/Csson/p5-Pod-Weaver-PluginBundle-Author-CSSON"
+      }
+   },
    "version" : "0.0001"
 }
 
