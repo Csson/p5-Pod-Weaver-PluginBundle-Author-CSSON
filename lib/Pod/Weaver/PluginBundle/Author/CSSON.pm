@@ -27,7 +27,7 @@ sub mvp_bundle_config {
             $include_default_github = 1;
         }
         else {
-            warn ('[PW/@Author::CSSON] No github url found');
+            warn ('[PW/@Author: ] No github url found');
         }
     }
 
@@ -63,8 +63,8 @@ sub mvp_bundle_config {
         ['@Author::CSSON/Legal',                 xp('Legal'),     { } ],
 
         ['@Author::CSSON/List', xp('-Transformer'), { transformer => 'List' } ],
+        ['@Author::CSSON/Splint', xp('-Transformer'), { transformer => 'Splint' } ],
     );
-
 
     return @plugins;
 }
