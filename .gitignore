@@ -1,8 +1,11 @@
-/Pod-Weaver-PluginBundle-Author-CSSON-*
+# This file was auto-generated from iller.yaml by Dist::Iller on 2016-02-18 22:15:40 UTC.
+# The following configs were used:
+# * Dist::Iller::Config::Author::CSSON: 0.0308
+
 /.build
 /_build*
 /Build
 MYMETA.*
 !META.json
 /.prove
-
+/Pod-Weaver-PluginBundle-Author-CSSON-*

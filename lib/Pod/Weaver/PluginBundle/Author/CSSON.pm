@@ -4,7 +4,9 @@ use warnings;
 
 package Pod::Weaver::PluginBundle::Author::CSSON;
 
-# VERSION
+# ABSTRACT: Weave Pod like CSSON
+# AUTHORITY
+our $VERSION = '0.1101';
 
 use strict;
 use warnings;
@@ -71,4 +73,10 @@ sub mvp_bundle_config {
 
 1;
 
-# ABSTRACT: Weave Pod like CSSON
+__END__
+
+=head1 STATUS
+
+Deprecated. See L<Dist::Iller::Config::Author::CSSON> instead.
+
+=cut
