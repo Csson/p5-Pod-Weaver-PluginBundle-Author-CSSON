@@ -6,7 +6,7 @@ package Pod::Weaver::PluginBundle::Author::CSSON;
 
 # ABSTRACT: Weave Pod like CSSON
 # AUTHORITY
-our $VERSION = '0.1101';
+our $VERSION = '0.1102';
 
 use strict;
 use warnings;
